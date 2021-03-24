@@ -1,3 +1,6 @@
+#For practice use only
+#ATS covid questionnaire should be completed based on how you feel everyday
+
 from selenium import webdriver
 from selenium.webdriver.support.select import Select
 
@@ -6,7 +9,7 @@ athleteID = "Enter User"
 password = "Enter Pass"
 database = "atsstevens"
 
-driver = webdriver.Chrome(executable_path= r"C:\Users\Stevens User\Documents\Semester 4\Extra\chromedriver_win32 (1)\chromedriver.exe")
+driver = webdriver.Chrome(executable_path= r"Your_Executable_path")
 driver.get("https://www.atsusers.com/ATSWeb/Default.aspx")
 text_area = driver.find_element_by_xpath('//*[@id="MainContent_txtUserName"]')
 text_area.send_keys(athleteID)
